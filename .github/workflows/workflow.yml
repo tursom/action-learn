@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: docker://ubuntu:2204
+      image: docker://ubuntu:22.04
     steps:
       - name: 打印操作系统版本
         run: cat /etc/os-release
