@@ -1,0 +1,13 @@
+name: 使用自定义 Docker 镜像的工作流
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: docker://ubuntu:2204
+    steps:
+      - name: 打印操作系统版本
+        run: cat /etc/os-release
